@@ -3,7 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/@databendcloud/databend-logos.svg?style=flat)](https://npmjs.org/package/@databendcloud/databend-logos)
 [![NPM downloads](http://img.shields.io/npm/dm/@databendcloud/databend-logos.svg?style=flat)](https://npmjs.org/package/@databendcloud/databend-logos)
 
-A react library developed with dumi
+A react library
 
 ## Usage
 
