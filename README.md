@@ -7,33 +7,21 @@ A react library developed with dumi
 
 ## Usage
 
-TODO
+# Two ways to use it
 
-## Options
+## 1.Package
+```ts
+yarn add @databendcloud/databend-logos
 
-TODO
+import { LightDatabendHorizontalSvg } from '@databendcloud/databend-logos';
 
-## Development
+<LightDatabendHorizontalSvg width={200}/>
 
-```bash
-# install dependencies
-$ yarn install
-
-# develop library by docs demo
-$ yarn start
-
-# build library source code
-$ yarn run build
-
-# build library source code in watch mode
-$ yarn run build:watch
-
-# build docs
-$ yarn run docs:build
-
-# check your project for potential problems
-$ yarn run doctor
 ```
+
+## 2.Custom
+
+<a href="https://databendcloud.github.io/databend-logos/components/databend-cloud">Download Zip</a>
 
 ## LICENSE
 
