@@ -1,0 +1,41 @@
+name: Publish to GitHub Packages
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if it's not 'main'
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'  # Change this to the Node.js version you're using
+        registry-url: 'https://npm.pkg.github.com'
+        scope: '@databendcloud'  # Change this to your GitHub organization or username
+
+    - name: yarn Install dependencies
+      run: yarn
+      
+
+    - name: Build dist
+      run: npm run build
+
+    - name: Build Docs
+      run: npm run docs:build
+        
+    - name: Publish
+      run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.DATABEND_CLOUD_NPM_TOKEN }}
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.DATABEND_CLOUD_NPM_TOKEN }}
+        publish_dir: ./docs-dist  # Change this to the directory you want to deploy
