@@ -10,6 +10,10 @@ export default defineConfig({
     },
     name: '',
     footer: `<div>Copyright © ${new Date().getFullYear()} | <a href="https://www.databend.com" target="_blank">Databend Cloud</a></div>`,
+    socialLinks: {
+      github: 'https://github.com/databendcloud/databend-logos',
+      twitter: 'https://twitter.com/DatabendLabs'
+    },
   },
   logo: '/databend-logos/logo.svg',
   favicons: [
