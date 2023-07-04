@@ -29,10 +29,10 @@ jobs:
     - name: Build Docs
       run: npm run docs:build
         
-    - name: Publish1
-      run: npm publish
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.DATABEND_CLOUD_NPM_TOKEN }}
+    # - name: Publish1
+    #   run: npm publish
+    #   env:
+    #     NODE_AUTH_TOKEN: ${{ secrets.DATABEND_CLOUD_NPM_TOKEN }}
 
     - name: Publish2
       run: npm publish
