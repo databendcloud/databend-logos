@@ -3,10 +3,10 @@
 [![NPM version](https://img.shields.io/npm/v/@databendcloud/databend-logos.svg?style=flat)](https://npmjs.org/package/@databendcloud/databend-logos)
 [![NPM downloads](http://img.shields.io/npm/dm/@databendcloud/databend-logos.svg?style=flat)](https://npmjs.org/package/@databendcloud/databend-logos)
 
-## docs
+# docs
 https://databendcloud.github.io/databend-logos/
 
-## Usage
+# Usage
 
 ## Two ways to use it
 
@@ -24,6 +24,6 @@ import { LightDatabendHorizontalSvg } from '@databendcloud/databend-logos';
 
 <a href="https://databendcloud.github.io/databend-logos/components/all-assets">Download Zip</a>
 
-## LICENSE
+# LICENSE
 
 MIT
