@@ -16,7 +16,7 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '18'  # Change this to the Node.js version you're using
-        registry-url: 'https://npm.pkg.github.com'
+        registry-url: 'https://registry.npmjs.org'
         scope: '@databend'  # Change this to your GitHub organization or username
 
     - name: yarn Install dependencies
