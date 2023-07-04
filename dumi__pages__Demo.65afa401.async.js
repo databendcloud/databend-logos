@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_databendcloud_databend_logos=self.webpackChunk_databendcloud_databend_logos||[]).push([[448],{65149:function(f,a,e){e.r(a),e.d(a,{default:function(){return u}});var n=e(14570),o=e(67294),t=function(){var r=(0,n.UO)(),s=r.id,m=(0,n.WF)(),c=m.demos,l=c[s]||{},d=l.component;return d&&(0,o.createElement)(d)},u=t}}]);
