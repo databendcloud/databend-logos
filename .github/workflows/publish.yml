@@ -40,7 +40,7 @@ jobs:
     #     NODE_AUTH_TOKEN: ${{ secrets.NPM_DATABEND_TOKEN_NPM_OUT }}
     - name: Publish to npm
       run: |
-        echo "//registry.npmjs.org/:_authToken=\${{ secrets.NPM_AUTH_TOKEN }}" > .npmrc
+        echo "//registry.npmjs.org/:_authToken=\${{ secrets.NPM_DATABEND_TOKEN_NPM_OUT }}" > .npmrc
         npm publish
 
     - name: Clean up
