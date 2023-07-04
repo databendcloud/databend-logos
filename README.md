@@ -27,3 +27,6 @@ import { LightDatabendHorizontalSvg } from 'databend-logos';
 # LICENSE
 
 MIT
+
+# npm
+https://www.npmjs.com/package/databend-logos
