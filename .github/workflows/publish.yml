@@ -12,12 +12,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Use Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '18'  # Change this to the Node.js version you're using
-        registry-url: 'https://registry.npmjs.org'
-        scope: '@databend'  # Change this to your GitHub organization or username
+    # - name: Use Node.js
+    #   uses: actions/setup-node@v2
+    #   with:
+    #     node-version: '18'  # Change this to the Node.js version you're using
+    #     registry-url: 'https://npm.pkg.github.com'
+    #     scope: '@databend'  # Change this to your GitHub organization or username
 
     - name: yarn Install dependencies
       run: yarn
@@ -29,18 +29,22 @@ jobs:
     - name: Build Docs
       run: npm run docs:build
         
+    # - name: Publish1
+    #   run: npm publish
+    #   env:
+    #     NODE_AUTH_TOKEN: ${{ secrets.DATABEND_CLOUD_NPM_TOKEN }}
 
     # - name: Publish2
     #   run: npm publish
     #   env:
-    #     NPM_AUTH_TOKEN: ${{ secrets.NPM_DATABEND_TOKEN_NPM_OUT }}
-    - name: 'Publish to the npm registry'
-      uses: primer/publish@3.0.0
-      env:
-        NPM_AUTH_TOKEN: ${{ secrets.NPM_DATABEND_TOKEN_NPM_OUT }}
-      with:
-        default_branch: 'main'
+    #     NODE_AUTH_TOKEN: ${{ secrets.NPM_DATABEND_TOKEN_NPM_OUT }}
+    - name: Publish to npm
+      run: |
+        echo "//registry.npmjs.org/:_authToken=\${{ secrets.NPM_AUTH_TOKEN }}" > .npmrc
+        npm publish
 
+    - name: Clean up
+      run: rm .npmrc
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
