@@ -4,7 +4,7 @@
 ## SVG
 ### LightDatabendCloudHorizontalSvg
 ```jsx
-import { LightDatabendCloudHorizontalSvg } from '@databend/databend-logos';
+import { LightDatabendCloudHorizontalSvg } from 'databend-logos';
 
 export default () => (
   <LightDatabendCloudHorizontalSvg width={300}/>
@@ -14,7 +14,7 @@ export default () => (
 
 ### LightDatabendCloudVerticalSvg
 ```jsx
-import { LightDatabendCloudVerticalSvg } from '@databend/databend-logos';
+import { LightDatabendCloudVerticalSvg } from 'databend-logos';
 
 export default () => (
   <LightDatabendCloudVerticalSvg width={200}/>
@@ -24,7 +24,7 @@ export default () => (
 ### DarkDatabendCloudHorizontalSvg
 
 ```jsx
-import { DarkDatabendCloudHorizontalSvg } from '@databend/databend-logos';
+import { DarkDatabendCloudHorizontalSvg } from 'databend-logos';
 
 export default () => (
   
@@ -37,7 +37,7 @@ export default () => (
 ### DarkDatabendCloudVerticalSvg
 
 ```jsx
-import { DarkDatabendCloudVerticalSvg } from '@databend/databend-logos';
+import { DarkDatabendCloudVerticalSvg } from 'databend-logos';
 
 export default () => (
   
@@ -49,7 +49,7 @@ export default () => (
 
 ### LightDatabendCloudSingleSvg
 ```jsx
-import { LightDatabendCloudSingleSvg } from '@databend/databend-logos';
+import { LightDatabendCloudSingleSvg } from 'databend-logos';
 
 export default () => (
    <LightDatabendCloudSingleSvg width={100}/>
@@ -58,7 +58,7 @@ export default () => (
 
 ### DarkDatabendCloudSingleSvg
 ```jsx
-import { DarkDatabendCloudSingleSvg } from '@databend/databend-logos';
+import { DarkDatabendCloudSingleSvg } from 'databend-logos';
 
 export default () => (
   <div style={{background: '#000', padding: '20px', borderRadius: '8px'}}>
@@ -73,7 +73,7 @@ export default () => (
 ### LightDatabendCloudHorizontalPng
 
 ```jsx
-import { LightDatabendCloudHorizontalPng } from '@databend/databend-logos';
+import { LightDatabendCloudHorizontalPng } from 'databend-logos';
 
 export default () => (
   
@@ -84,7 +84,7 @@ export default () => (
 ### LightDatabendCloudVerticalPng
 
 ```jsx
-import { LightDatabendCloudVerticalPng } from '@databend/databend-logos';
+import { LightDatabendCloudVerticalPng } from 'databend-logos';
 
 export default () => (
   
@@ -95,7 +95,7 @@ export default () => (
 ### DarkDatabendCloudHorizontalPng
 
 ```jsx
-import { DarkDatabendCloudHorizontalPng } from '@databend/databend-logos';
+import { DarkDatabendCloudHorizontalPng } from 'databend-logos';
 
 export default () => (
   
@@ -109,7 +109,7 @@ export default () => (
 ### DarkDatabendCloudVerticalPng
 
 ```jsx
-import { DarkDatabendCloudVerticalPng } from '@databend/databend-logos';
+import { DarkDatabendCloudVerticalPng } from 'databend-logos';
 
 export default () => (
   
@@ -122,7 +122,7 @@ export default () => (
 ### LightDatabendCloudSinglePng
 
 ```jsx
-import { LightDatabendCloudSinglePng } from '@databend/databend-logos';
+import { LightDatabendCloudSinglePng } from 'databend-logos';
 
 export default () => (
   
@@ -132,7 +132,7 @@ export default () => (
 
 ### DarkDatabendCloudSinglePng
 ```jsx
-import { DarkDatabendCloudSinglePng } from '@databend/databend-logos';
+import { DarkDatabendCloudSinglePng } from 'databend-logos';
 
 export default () => (
   <div style={{background: '#000', padding: '20px', borderRadius: '8px'}}>

@@ -5,7 +5,7 @@
 ### LightDatabendLabsHorizontalSvg
 
 ```jsx
-import { LightDatabendLabsHorizontalSvg } from '@databend/databend-logos';
+import { LightDatabendLabsHorizontalSvg } from 'databend-logos';
 
 export default () => (
   <LightDatabendLabsHorizontalSvg width={200}/>
@@ -14,7 +14,7 @@ export default () => (
 
 ### DarkDatabendLabsHorizontalSvg
 ```jsx
-import { DarkDatabendLabsHorizontalSvg } from '@databend/databend-logos';
+import { DarkDatabendLabsHorizontalSvg } from 'databend-logos';
 
 export default () => (
   <div style={{background: '#000', padding: '20px', borderRadius: '8px'}}>
@@ -26,7 +26,7 @@ export default () => (
 ### LightDatabendLabsVerticalSvg
 
 ```jsx
-import { LightDatabendLabsVerticalSvg } from '@databend/databend-logos';
+import { LightDatabendLabsVerticalSvg } from 'databend-logos';
 
 export default () => (
  <LightDatabendLabsVerticalSvg width={150}/>
@@ -36,7 +36,7 @@ export default () => (
 ### DarkDatabendLabsVerticalSvg
 
 ```jsx
-import { DarkDatabendLabsVerticalSvg } from '@databend/databend-logos';
+import { DarkDatabendLabsVerticalSvg } from 'databend-logos';
 
 export default () => (
   <div style={{background: '#000', padding: '20px', borderRadius: '8px'}}>
@@ -50,7 +50,7 @@ export default () => (
 
 ### LightDatabendLabsHorizontalPng
 ```jsx
-import { LightDatabendLabsHorizontalPng } from '@databend/databend-logos';
+import { LightDatabendLabsHorizontalPng } from 'databend-logos';
 
 export default () => (
    <LightDatabendLabsHorizontalPng width={200}/>
@@ -60,7 +60,7 @@ export default () => (
 ### LightDatabendLabsVerticalPng
 
 ```jsx
-import { LightDatabendLabsVerticalPng } from '@databend/databend-logos';
+import { LightDatabendLabsVerticalPng } from 'databend-logos';
 
 export default () => (
    <LightDatabendLabsVerticalPng width={150}/>
@@ -70,7 +70,7 @@ export default () => (
 ### DarkDatabendLabsHorizontalPng
 
 ```jsx
-import { DarkDatabendLabsHorizontalPng } from '@databend/databend-logos';
+import { DarkDatabendLabsHorizontalPng } from 'databend-logos';
 
 export default () => (
   <div style={{background: '#000', padding: '20px', borderRadius: '8px'}}>
@@ -83,7 +83,7 @@ export default () => (
 ### DarkDatabendLabsVerticalPng
 
 ```jsx
-import { DarkDatabendLabsVerticalPng } from '@databend/databend-logos';
+import { DarkDatabendLabsVerticalPng } from 'databend-logos';
 
 export default () => (
   <div style={{background: '#000', padding: '20px', borderRadius: '8px'}}>

@@ -1,7 +1,7 @@
-# @databend/databend-logos
+# databend-logos
 
-[![NPM version](https://img.shields.io/npm/v/@databend/databend-logos.svg?style=flat)](https://npmjs.org/package/@databend/databend-logos)
-[![NPM downloads](http://img.shields.io/npm/dm/@databend/databend-logos.svg?style=flat)](https://npmjs.org/package/@databend/databend-logos)
+[![NPM version](https://img.shields.io/npm/v/databend-logos.svg?style=flat)](https://npmjs.org/package/databend-logos)
+[![NPM downloads](http://img.shields.io/npm/dm/databend-logos.svg?style=flat)](https://npmjs.org/package/databend-logos)
 
 # docs
 https://databendcloud.github.io/databend-logos/
@@ -12,9 +12,9 @@ https://databendcloud.github.io/databend-logos/
 
 ## 1.Package
 ```ts
-yarn add @databend/databend-logos
+yarn add databend-logos
 
-import { LightDatabendHorizontalSvg } from '@databend/databend-logos';
+import { LightDatabendHorizontalSvg } from 'databend-logos';
 
 <LightDatabendHorizontalSvg width={200}/>
 
