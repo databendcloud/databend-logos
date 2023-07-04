@@ -1,84 +1,47 @@
-# name: Publish to GitHub Packages
-
-# on:
-#   push:
-#     branches:
-#       - main  # Change this to your default branch if it's not 'main'
-
-# jobs:
-#   build-and-publish:
-#     runs-on: ubuntu-latest
-
-#     steps:
-#     - uses: actions/checkout@v2
-
-#     # - name: Use Node.js
-#     #   uses: actions/setup-node@v2
-#     #   with:
-#     #     node-version: '18'  # Change this to the Node.js version you're using
-#     #     registry-url: 'https://npm.pkg.github.com'
-#     #     scope: '@databend'  # Change this to your GitHub organization or username
-
-#     - name: yarn Install dependencies
-#       run: yarn
-      
-
-#     - name: Build dist
-#       run: npm run build
-
-#     - name: Build Docs
-#       run: npm run docs:build
-        
-#     # - name: Publish1
-#     #   run: npm publish
-#     #   env:
-#     #     NODE_AUTH_TOKEN: ${{ secrets.DATABEND_CLOUD_NPM_TOKEN }}
-
-#     # - name: Publish2
-#     #   run: npm publish
-#     #   env:
-#     #     NODE_AUTH_TOKEN: ${{ secrets.NPM_DATABEND_TOKEN_NPM_OUT }}
-#     - name: 'Publish to the npm registry'
-#       uses: primer/publish@3.0.0
-#       env:
-#         GITHUB_TOKEN: ${{ secrets.COPY_GITHUB_TOKEN }}
-#         NPM_AUTH_TOKEN: ${{ secrets.NPM_DATABEND_TOKEN_NPM_OUT }}
-#       with:
-#         default_branch: 'main'
-
-#     - name: Deploy to GitHub Pages
-#       uses: peaceiris/actions-gh-pages@v3
-#       with:
-#         github_token: ${{ secrets.DATABEND_CLOUD_NPM_TOKEN }}
-#         publish_dir: ./docs-dist  # Change this to the directory you want to deploy
-
-name: Public Npm
+name: Publish to GitHub Packages
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main  # Change this to your default branch if it's not 'main'
 
 jobs:
-  publish:
+  build-and-publish:
     runs-on: ubuntu-latest
 
-    name: 'publish npm'
-
-    environment: npm
-
     steps:
-      - uses: actions/checkout@master
+    - uses: actions/checkout@v2
 
-      - name: Install and Build 
-        run: |
-          yarn install
-          yarn run build
+    # - name: Use Node.js
+    #   uses: actions/setup-node@v2
+    #   with:
+    #     node-version: '18'  # Change this to the Node.js version you're using
+    #     registry-url: 'https://npm.pkg.github.com'
+    #     scope: '@databend'  # Change this to your GitHub organization or username
 
-      - name: 'Publish to the npm registry'
-        uses: primer/publish@3.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.COPY_GITHUB_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_DATABEND_TOKEN_NPM_OUT }}
-        with:
-          default_branch: 'main'
+    - name: yarn Install dependencies
+      run: yarn
+      
+
+    - name: Build dist
+      run: npm run build
+
+    - name: Build Docs
+      run: npm run docs:build
+        
+    # - name: Publish1
+    #   run: npm publish
+    #   env:
+    #     NODE_AUTH_TOKEN: ${{ secrets.DATABEND_CLOUD_NPM_TOKEN }}
+
+    - name: Publish2
+      run: npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_DATABEND_TOKEN_NPM_OUT }}
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.DATABEND_CLOUD_NPM_TOKEN }}
+        publish_dir: ./docs-dist  # Change this to the directory you want to deploy
 
