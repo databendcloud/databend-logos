@@ -10,9 +10,9 @@ hero:
 
 ## 1.Package
 ```ts
-yarn add @databendcloud/databend-logos
+yarn add @databend/databend-logos
 
-import { LightDatabendHorizontalSvg } from '@databendcloud/databend-logos';
+import { LightDatabendHorizontalSvg } from '@databend/databend-logos';
 
 <LightDatabendHorizontalSvg width={200}/>
 

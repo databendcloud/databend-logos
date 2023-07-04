@@ -1,7 +1,7 @@
 ## OpenDAL SVG
 
 ```jsx
-import { OpenDalSvg } from '@databendcloud/databend-logos';
+import { OpenDalSvg } from '@databend/databend-logos';
 
 export default () => (
   
@@ -16,7 +16,7 @@ OpenDalSvg.defaultProps = {
 
 ## OpenDAL PNG
 ```jsx
-import { OpenDalPng } from '@databendcloud/databend-logos';
+import { OpenDalPng } from '@databend/databend-logos';
 
 export default () => (
   

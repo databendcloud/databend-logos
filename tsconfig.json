@@ -8,8 +8,8 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "@databendcloud/databend-logos": ["src"],
-      "@databendcloud/databend-logos/*": ["src/*", "*"]
+      "@databend/databend-logos": ["src"],
+      "@databend/databend-logos/*": ["src/*", "*"]
     }
   },
   "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "./dumi-env.d.ts"]
