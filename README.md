@@ -28,5 +28,5 @@ import { LightDatabendHorizontalSvg } from 'databend-logos';
 
 MIT
 
-# npm
-https://www.npmjs.com/package/databend-logos
+# Vue infra
+https://www.npmjs.com/package/databend-vue-logos

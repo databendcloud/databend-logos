@@ -18,6 +18,6 @@ import { LightDatabendHorizontalSvg } from 'databend-logos';
 
 ```
 
-## 2.Custom
+## 2.Define Yourself
 
 <a href="/components/all-assets">Download Zip</a>
