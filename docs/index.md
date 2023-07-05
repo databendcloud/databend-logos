@@ -9,10 +9,23 @@ hero:
 # Two ways to use it
 
 ## 1.Package
+
+### react
 ```ts
 yarn add databend-logos
 
 import { LightDatabendHorizontalSvg } from 'databend-logos';
+
+<LightDatabendHorizontalSvg width={200}/>
+
+```
+
+### Vue
+```ts
+
+yarn add databend-vue-logos
+
+import { LightDatabendHorizontalSvg } from 'databend-vue-logos';
 
 <LightDatabendHorizontalSvg width={200}/>
 
