@@ -20,7 +20,7 @@ import { LightDatabendHorizontalSvg } from 'databend-logos';
 
 ```
 
-### Vue
+### vue
 ```ts
 
 yarn add databend-vue-logos
