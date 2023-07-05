@@ -22,6 +22,7 @@ import { LightDatabendHorizontalSvg } from 'databend-logos';
 
 ## 2.Define Yourself
 
+
 <a href="https://databendcloud.github.io/databend-logos/components/all-assets">Download Zip</a>
 
 # LICENSE
