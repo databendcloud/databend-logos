@@ -2,10 +2,10 @@
 import React, { FC, ReactElement } from 'react';
 import Img from './databend-labs-logo-vertical-reverse.png';
 import { ICommonProps } from 'databend-logos/types';
-import { formatWidth } from 'databend-logos/utils';
+
 
 const DarkDatabendLabsVerticalPng: FC<ICommonProps> = ({width}): ReactElement=> {
-  return (<img width={formatWidth(width)} src={Img} />);
+  return (<img width={width} src={Img} />);
 };
 DarkDatabendLabsVerticalPng.defaultProps = {
   width: 300

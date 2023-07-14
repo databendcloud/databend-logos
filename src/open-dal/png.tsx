@@ -1,11 +1,11 @@
 // Copyright 2023 DatabendLabs.
 import React, { FC, ReactElement } from 'react';
 import Img from './open-dal-logo.png';
-import { formatWidth } from 'databend-logos/utils';
+
 import { ICommonProps } from 'databend-logos/types';
 
 const OpenDalPng: FC<ICommonProps> = ({ width }): ReactElement=> {
-  return (<img width={formatWidth(width)} src={Img} />);
+  return (<img width={width} src={Img} />);
 };
 OpenDalPng.defaultProps = {
   width: 300
