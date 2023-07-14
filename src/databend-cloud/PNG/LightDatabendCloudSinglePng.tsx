@@ -1,11 +1,11 @@
 // Copyright 2023 DatabendLabs.
 import React, { FC, ReactElement } from 'react';
 import Img from './Databend-Cloud-logo-05.png';
-interface IProps {
-  width?: number;
-}
-const LightDatabendCloudSinglePng: FC<IProps> = ({width}): ReactElement=> {
-return (<img width={width} src={Img} />);
+import { ICommonProps } from 'databend-logos/types';
+import { formatWidth } from 'databend-logos/utils';
+
+const LightDatabendCloudSinglePng: FC<ICommonProps> = ({width}): ReactElement=> {
+  return (<img width={formatWidth(width)} src={Img} />);
 };
 LightDatabendCloudSinglePng.defaultProps = {
   width: 200

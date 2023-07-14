@@ -1,6 +1,12 @@
 
 # Databend Cloud 
 
+```javascript
+export interface ICommonProps {
+  width?: number | string | percent; // 200、200px、50% 
+}
+```
+
 ## SVG
 ### LightDatabendCloudHorizontalSvg
 ```jsx
