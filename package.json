@@ -1,6 +1,6 @@
 {
   "name": "databend-logos",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "A react library developed with dumi",
   "repository": "git://github.com:databendcloud/databend-logos.git",
   "license": "MIT",

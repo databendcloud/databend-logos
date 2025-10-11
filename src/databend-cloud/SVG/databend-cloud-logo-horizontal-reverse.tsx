@@ -4,7 +4,7 @@ import { ICommonProps } from 'databend-logos/types';
 import React, { FC, ReactElement } from 'react';
 
 const DarkDatabendCloudHorizontalSvg: FC<ICommonProps> = ({
-  width,
+  width = 300,
 }): ReactElement => {
   return (
     <svg
@@ -84,7 +84,5 @@ const DarkDatabendCloudHorizontalSvg: FC<ICommonProps> = ({
     </svg>
   );
 };
-DarkDatabendCloudHorizontalSvg.defaultProps = {
-  width: 300,
-};
+
 export default DarkDatabendCloudHorizontalSvg;

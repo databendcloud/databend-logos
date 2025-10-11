@@ -1,13 +1,12 @@
 // Copyright 2023 DatabendLabs.
+import { ICommonProps } from 'databend-logos/types';
 import React, { FC, ReactElement } from 'react';
 import Img from './Databend-LOGO-05.png';
-import { ICommonProps } from 'databend-logos/types';
 
-
-const LightDatabendSinglePng: FC<ICommonProps> = ({width}): ReactElement=> {
-return (<img width={width} src={Img} />);
+const LightDatabendSinglePng: FC<ICommonProps> = ({
+  width = 200,
+}): ReactElement => {
+  return <img width={width} src={Img} />;
 };
-LightDatabendSinglePng.defaultProps = {
-  width: 200
-}
+
 export default LightDatabendSinglePng;

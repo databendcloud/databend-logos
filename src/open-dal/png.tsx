@@ -4,10 +4,8 @@ import Img from './open-dal-logo.png';
 
 import { ICommonProps } from 'databend-logos/types';
 
-const OpenDalPng: FC<ICommonProps> = ({ width }): ReactElement=> {
-  return (<img width={width} src={Img} />);
+const OpenDalPng: FC<ICommonProps> = ({ width = 300 }): ReactElement => {
+  return <img width={width} src={Img} />;
 };
-OpenDalPng.defaultProps = {
-  width: 300
-}
+
 export default OpenDalPng;
