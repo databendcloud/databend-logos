@@ -1,5 +1,4 @@
 # databend-logos
-
 [![NPM version](https://img.shields.io/npm/v/databend-logos.svg?style=flat)](https://npmjs.org/package/databend-logos)
 [![NPM downloads](http://img.shields.io/npm/dm/databend-logos.svg?style=flat)](https://npmjs.org/package/databend-logos)
 
