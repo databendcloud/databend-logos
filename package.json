@@ -1,8 +1,11 @@
 {
   "name": "databend-logos",
-  "version": "0.0.19",
+  "version": "0.0.21",
   "description": "A react library developed with dumi",
-  "repository": "git://github.com:databendcloud/databend-logos.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/databendcloud/databend-logos.git"
+  },
   "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
